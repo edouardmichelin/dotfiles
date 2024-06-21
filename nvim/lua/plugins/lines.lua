@@ -38,7 +38,7 @@ return {
    },
    {
       "akinsho/bufferline.nvim",
-      version = "v3.*",
+      version = "v4.*",
       dependencies = "nvim-tree/nvim-web-devicons",
       opts = {
          options = {
