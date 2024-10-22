@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "describe",
+        "it",
+        "on_attach_change"
+    ]
+}

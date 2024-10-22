@@ -37,13 +37,17 @@ return {
       end,
    },
    {
+      "nvim-tree/nvim-tree.lua",
+      opts = { on_attach = on_attach_change }
+   },
+   {
       "akinsho/bufferline.nvim",
       version = "v4.*",
       dependencies = "nvim-tree/nvim-web-devicons",
       opts = {
          options = {
             separator_style = "slant",
-            mode = "tabs",
+            mode = "buffers",
             offsets = {
                {
                   filetype = "NvimTree",
