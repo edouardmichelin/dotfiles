@@ -38,7 +38,11 @@ return {
    },
    {
       "nvim-tree/nvim-tree.lua",
-      opts = { on_attach = on_attach_change }
+      opts = { on_attach = on_attach_change },
+      keys = {
+         { "<Leader>tt", ":NvimTreeToggle<CR>" },
+         { "<Leader>tf", ":NvimTreeFocus<CR>" },
+      },
    },
    {
       "akinsho/bufferline.nvim",
