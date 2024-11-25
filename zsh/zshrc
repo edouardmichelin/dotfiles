@@ -1,0 +1,48 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=500
+SAVEHIST=1000
+setopt extendedglob
+unsetopt beep
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/edouard/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+alias exa='exa -T -L'
+alias kssh='kitty +kitten ssh'
+
+# custom env vars
+export ACC_PROJ=~/Documents/epfl/ma2/compiler/project/l3/compiler
+export flep=~/Documents/epfl/ma3
+
+# ETH research project
+export MODEL=~/Documents/epfl/ma3/research-project/cca-docker/cca-stack/Base_RevC_AEMvA_pkg/models/Linux64_GCC-9.3/FVP_Base_RevC-2xAEMvA
+export proj=~/Documents/epfl/ma3/research-project
+export fvp=~/Documents/epfl/ma3/research-project/cca-docker/cca-stack
+
+export PATH="$PATH:/home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack/Base_RevC_AEMvA_pkg/models/Linux64_GCC-9.3"
+
+alias teetime-container='echo "\ncd ~/Documents/epfl/ma3/research-project/cca-docker/cca-stack\n./build-scripts/aemfvp-a-rme/build-test-buildroot.sh -p aemfvp-a-rme all\n"; /home/edouard/Documents/epfl/ma3/research-project/cca-docker/docker/container.sh -v /home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack run'
+alias teetime='cd /home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack; ./model-scripts/aemfvp-a-rme/boot.sh -p aemfvp-a-rme shell'
+alias teetime-debug='cd /home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack; ./model-scripts/aemfvp-a-rme/boot.sh -p aemfvp-a-rme shell-debug'
+alias teetime-print='cd /home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack; ./model-scripts/aemfvp-a-rme/boot.sh -p aemfvp-a-rme print-cmd'
+export teetime_symbols=/home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack/tf-a/build/fvp/debug/bl31/bl31.elf
+
+export PATH="$PATH:/home/edouard/developmentstudio-2024.0-1/bin"
+
+
+alias gcc-arm='~/bin/gcc-arm-11.2-2022.02-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc-11.2.1 --sysroot=/home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot'
+alias cca-stack-run='./container.sh -v /home/edouard/Documents/epfl/ma3/research-project/cca-docker/cca-stack run'
+alias fvp-run='./model-scripts/aemfvp-a-rme/boot.sh -p aemfvp-a-rme shell'
+
+alias cca-build-help='echo "On host machine:\nsu edouard\ncd $proj/cca-docker/docker\n./container.sh -v ~/Documents/epfl/ma3/research-project/cca-docker/cca-stack run\n\nThen inside the container:\ncd ~/Documents/epfl/ma3/research-project/cca-docker/cca-stack\n./build-scripts/aemfvp-a-rme/build-test-buildroot.sh -p aemfvp-a-rme all"'
+
+# Created by `pipx` on 2024-03-26 19:11:19
+export PATH="$PATH:/home/edouard/.local/bin"
+
+source ~/.config/zsh/fzf.zsh
+source ~/.config/zsh/z.zsh
