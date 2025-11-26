@@ -1,18 +1,17 @@
 return {
    {
-      "m4xshen/catppuccinight.nvim",
-      name = "catppuccin",
-      opts = {
-         flavour = "mocha",
-         custom_highlights = function(colors)
-            return {
-               VertSplit = { fg = colors.surface0 },
-            }
-         end,
-      },
+      "mhinz/vim-startify",
+   },
+   {
+      "scottmckendry/cyberdream.nvim",
+      lazy = false,
+      priority = 1000,
       init = function()
-         vim.cmd.colorscheme("catppuccin")
-      end,
+         require("cyberdream").setup({
+            transparent=true
+         })
+         vim.cmd.colorscheme("cyberdream")
+      end
    },
    {
       "aznhe21/actions-preview.nvim",

@@ -1,51 +1,58 @@
 return {
    {
       "nvim-treesitter/nvim-treesitter",
+      lazy="false",
+      branch="main",
       build = ":TSUpdate",
       config = function()
-         require("nvim-treesitter.configs").setup({
-            auto_install = true,
-            ensure_installed = {
-               "astro",
-               "asm",
-               "c",
-               "cpp",
-               "css",
-               "comment",
-               "dockerfile",
-               "html",
-               "javascript",
-               "latex",
-               "lua",
-               "markdown",
-               "make",
-               "php_only",
-               "python",
-               "tsx",
-               "vim",
-               "vimdoc",
-            },
+         require("nvim-treesitter").setup({
             highlight = { enable = true },
             indent = { enable = true },
             autotag = { enable = true },
+         })
+         require("nvim-treesitter").install({
+            "astro",
+            "asm",
+            "c",
+            "cpp",
+            "css",
+            "comment",
+            "devicetree",
+            "dockerfile",
+            "html",
+
+            "latex",
+            "lua",
+            "markdown",
+            "make",
+            "objdump",
+            "php_only",
+            "python",
+            "tsx",
+            "vim",
+            "vimdoc"
+         })
+         vim.filetype.add({
+            extension = {
+               S = "asm"
+            }
          })
       end,
    },
    {
       "nvim-treesitter/nvim-treesitter-textobjects",
+      branch="main",
       dependencies = { "nvim-treesitter/nvim-treesitter" },
       config = function()
-         require("nvim-treesitter.configs").setup({
-            textobjects = {
-               select = {
-                  enable = true,
-                  lookahead = true,
-                  keymaps = {
-                     ["af"] = "@function.outer",
-                     ["if"] = "@function.inner",
-                     ["ac"] = "@class.outer",
-                     ["ic"] = "@class.inner",
-                  },
+         require("nvim-treesitter-textobjects").setup({
+            select = {
+               enable = true,
+               lookahead = true,
+               keymaps = {
+                  ["af"] = "@function.outer",
+                  ["if"] = "@function.inner",
+                  ["ac"] = "@class.outer",
+                  ["ic"] = "@class.inner",
                },
             },
          })

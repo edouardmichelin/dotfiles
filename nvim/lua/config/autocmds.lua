@@ -108,3 +108,13 @@ vim.api.nvim_create_autocmd("BufEnter", {
       )
    end,
 })
+
+vim.api.nvim_create_autocmd({ "User" }, {
+   pattern = "VeryLazy",
+   callback = function ()
+      if vim.fn.argc(-1) == 0 then
+         vim.cmd("NvimTreeOpen")
+      end
+   end
+})
+

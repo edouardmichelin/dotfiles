@@ -25,7 +25,7 @@ return {
       dependencies = { "nvim-tree/nvim-web-devicons" },
       opts = {
          options = {
-            theme = "catppuccin",
+            theme = "cyberdream",
             globalstatus = true,
          },
          sections = {
@@ -38,10 +38,12 @@ return {
    },
    {
       "nvim-tree/nvim-tree.lua",
+      lazy=false,
       opts = { on_attach = on_attach_change },
       keys = {
          { "<Leader>tt", ":NvimTreeToggle<CR>" },
          { "<Leader>tf", ":NvimTreeFocus<CR>" },
+         { "<Leader>tl", ":NvimTreeFindFile<CR>" },
       },
    },
    {
@@ -67,7 +69,7 @@ return {
       "utilyre/barbecue.nvim",
       name = "barbecue",
       version = "*",
-      theme = "catppuccin",
+      theme = "cyberdream",
       dependencies = {
          "SmiteshP/nvim-navic",
          "nvim-tree/nvim-web-devicons",
