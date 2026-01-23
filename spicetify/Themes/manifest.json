@@ -1,5 +1,22 @@
 [
 	{
+		"name": "SharkBlue",
+		"description": "SharkBlue",
+		"preview": "SharkBlue/screenshot.png",
+		"readme": "SharkBlue/README.md",
+		"usercss": "SharkBlue/user.css",
+		"schemes": "SharkBlue/color.ini",
+		"authors": [
+			{
+				"name": "Mr Biscuit",
+				"url": "https://github.com/MrBiscuit921"
+			}
+		],
+		"tags": [
+			"latest"
+		]
+	},
+	{
 		"name": "BurntSienna",
 		"description": "BurntSienna",
 		"preview": "BurntSienna/screenshot.png",
@@ -11,6 +28,9 @@
 				"name": "pjaspinski",
 				"url": "https://github.com/pjaspinski"
 			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -25,6 +45,9 @@
 				"name": "Blacksuan19",
 				"url": "https://github.com/Blacksuan19"
 			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -39,6 +62,10 @@
 				"name": "CharlieS1103",
 				"url": "https://github.com/CharlieS1103"
 			}
+		],
+		"tags": [
+			"outdated",
+			"v1.2.13"
 		]
 	},
 	{
@@ -49,13 +76,37 @@
 		"usercss": "Dribbblish/user.css",
 		"schemes": "Dribbblish/color.ini",
 		"include": [
-			"https://raw.githubusercontent.com/spicetify/spicetify-themes/master/Dribbblish/dribbblish.js"
+			"https://raw.githubusercontent.com/spicetify/spicetify-themes/master/Dribbblish/theme.js"
 		],
 		"authors": [
 			{
 				"name": "khanhas",
 				"url": "https://github.com/khanhas"
+			},
+			{
+				"name": "harbassan",
+				"url": "https://github.com/harbassan"
 			}
+		],
+		"tags": [
+			"latest"
+		]
+	},
+	{
+		"name": "Matte",
+		"description": "Has a neat color pallete and a much cleaner interface",
+		"preview": "Matte/screenshots/ylx-matte.png",
+		"readme": "Matte/README.md",
+		"usercss": "Matte/user.css",
+		"schemes": "Matte/color.ini",
+		"authors": [
+			{
+				"name": "darkthemer",
+				"url": "https://github.com/darkthemer"
+			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -70,6 +121,9 @@
 				"name": "okarin001",
 				"url": "https://github.com/okarin001"
 			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -84,6 +138,26 @@
 				"name": "harbassan",
 				"url": "https://github.com/harbassan"
 			}
+		],
+		"tags": [
+			"latest"
+		]
+	},
+	{
+		"name": "text",
+		"description": "a spicetify theme that mimics the look of spotify-tui",
+		"preview": "text/screenshots/Gruvbox.png",
+		"readme": "text/README.md",
+		"usercss": "text/user.css",
+		"schemes": "text/color.ini",
+		"authors": [
+			{
+				"name": "darkthemer",
+				"url": "https://github.com/darkthemer"
+			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -94,13 +168,16 @@
 		"usercss": "Turntable/user.css",
 		"schemes": "Turntable/color.ini",
 		"include": [
-			"https://raw.githubusercontent.com/spicetify/spicetify-themes/master/Turntable/turntable.js"
+			"https://raw.githubusercontent.com/spicetify/spicetify-themes/master/Turntable/theme.js"
 		],
 		"authors": [
 			{
 				"name": "Grason Chan",
 				"url": "https://github.com/grasonchan"
 			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -115,6 +192,9 @@
 				"name": "schnensch0",
 				"url": "https://github.com/schnensch0"
 			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -141,6 +221,9 @@
 				"name": "Alex Casieri",
 				"url": "https://github.com/alexcasieri30"
 			}
+		],
+		"tags": [
+			"latest"
 		]
 	},
 	{
@@ -154,6 +237,33 @@
 			{
 				"name": "Robatortas", "url": "https://github.com/Robatortas"
 			}
-    ]
+    		],
+		"tags": [
+			"latest"
+		]
+	},
+	{
+		"name": "StarryNight",
+		"description": "Starry Night",
+		"preview": "StarryNight/images/base.png",
+		"readme": "StarryNight/README.md",
+		"usercss": "StarryNight/user.css",
+		"schemes": "StarryNight/color.ini",
+		"include": [
+			"https://raw.githubusercontent.com/spicetify/spicetify-themes/master/StarryNight/theme.js"
+		],
+		"authors": [
+			{
+				"name": "Brandon Chen",
+				"url": "https://github.com/b-chen00"
+			},
+			{
+				"name": "Julissa Laignelet",
+				"url": "https://github.com/laignelet16"
+			}
+		],
+		"tags": [
+			"latest"
+		]
 	}
 ]
