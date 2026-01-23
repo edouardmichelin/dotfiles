@@ -20,8 +20,8 @@ return {
             "devicetree",
             "dockerfile",
             "html",
-
             "latex",
+            "linkerscript",
             "lua",
             "markdown",
             "make",
@@ -34,8 +34,12 @@ return {
          })
          vim.filetype.add({
             extension = {
-               S = "asm"
+               S = "asm",
+            },
+            pattern = {
+               ["*.ld.S"] = "linkerscript",
             }
+
          })
       end,
    },

@@ -77,7 +77,7 @@ return {
          vim.lsp.config("asm_lsp", {
             capabilities = capabilities,
             cmd = { "asm-lsp" },
-            filetypes = { "S", "asm" },
+            filetypes = { "S", "asm", "ld.S" },
             root_markers = { ".asm-lsp.toml", ".git" }
          })
 
@@ -93,9 +93,10 @@ return {
          )
 
          vim.lsp.handlers["textDocument/publishDiagnostics"] =
-            vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-               virtual_text = false,
-            })
+         vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+            virtual_text = false,
+         })
+
       end,
    },
    {
