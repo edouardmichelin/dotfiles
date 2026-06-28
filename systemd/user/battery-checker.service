@@ -1,0 +1,6 @@
+[Unit]
+Description=Check battery level
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/battery-checker.sh
