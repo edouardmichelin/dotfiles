@@ -4,17 +4,17 @@ window {
     font-size: 1.3rem;
     font-family: "JetBrains Mono";
     margin: 5px;
-    background-color: alpha(#000, 0.5); 
-    border: 3px solid alpha(red, 0.5);
+    background-color: alpha(#6C7086, 0.1); 
+    border: 3px solid alpha(#6C7086, 0.4);
     border-radius: 16px;
 }
 
 #input {
-    all:unset;
+    all: unset;
     padding: 20px;
     outline: none;
-    color: red;
-    background-color: alpha(#000,0.7);
+    color: white;
+    background-color: alpha(#11111B,0.8);
     border-radius: 16px;
     margin: 5px;
 }
@@ -29,7 +29,7 @@ window {
 
 #inner-box {
     margin: 5px;
-    background-color: alpha(#000, 0.7); 
+    background-color: alpha(#11111B, 0.8); 
     padding-top: 10px;
     border-radius: 16px;
 }
@@ -51,6 +51,6 @@ window {
 }
 
 #entry:selected {
-    background-color: alpha(red, 0.4);
+    background-color: alpha(#6C7086, 0.4);
 }
 
