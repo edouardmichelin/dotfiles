@@ -1,0 +1,56 @@
+*{border-radius:16px;}
+window {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "JetBrains Mono";
+    margin: 5px;
+    background-color: alpha(#000, 0.5); 
+    border: 3px solid alpha(red, 0.5);
+    border-radius: 16px;
+}
+
+#input {
+    all:unset;
+    padding: 20px;
+    outline: none;
+    color: red;
+    background-color: alpha(#000,0.7);
+    border-radius: 16px;
+    margin: 5px;
+}
+
+#input image {
+    padding-right: 10px;
+}
+
+#outer-box {
+    border-radius: 16px;
+}
+
+#inner-box {
+    margin: 5px;
+    background-color: alpha(#000, 0.7); 
+    padding-top: 10px;
+    border-radius: 16px;
+}
+
+#text {
+    margin: 5px;
+    color: white;
+    outline: none;
+}
+
+#text:selected {
+    color: white;
+}
+
+#entry {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+#entry:selected {
+    background-color: alpha(red, 0.4);
+}
+
